@@ -1,0 +1,32 @@
+
+import os
+from markovbot import MarkovBot 
+
+#initialize a MarkovBot instance
+tweetbot = MarkoBot()
+
+#Get the current directory's path
+dirname = os.path.dirname(os.path.adbpath(_file_))
+#Construct the path to the book
+boot = os.path.join(dirname, 'Freud_Dream_Psychology.tx')
+#Bot read book
+tweetbot.read(book)
+
+my_first_text = tweetbot.generate_text(25, seedword=['dream', 'psychoanalysis'])
+prtint "Tweetbot says: The scrub is on")
+print(my_first_text)
+
+
+#All the juicy stuff
+#Consumer Key (API Key) 
+cons_key = 'seedless'
+# Consumer Secret (API Secret)
+cons_secret ='darko'
+#Acess Token
+access_token = 'blacko'
+# Acess Token Secret 
+access_token_secret = 'blacko'
+
+tweetbot.twitter_login(cons_key, cons_secret, access_token, access_token_secret)
+
+
